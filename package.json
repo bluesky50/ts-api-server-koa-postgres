@@ -1,0 +1,40 @@
+{
+  "name": "ts-api-server-koa",
+  "version": "1.0.0",
+  "author": "jchiang",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/joi": "^13.0.8",
+    "@types/jsonwebtoken": "^7.2.6",
+    "@types/koa": "^2.0.45",
+    "@types/koa-bodyparser": "^4.2.0",
+    "@types/koa-csrf": "^3.0.0",
+    "@types/koa-helmet": "^3.1.2",
+    "@types/koa-logger": "^3.1.0",
+    "@types/koa-router": "^7.0.28",
+    "@types/moment": "^2.13.0",
+    "ts-node": "^6.0.1",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "@koa/cors": "^2.2.1",
+    "@types/sequelize": "^4.27.16",
+    "joi": "^13.2.0",
+    "jshashes": "^1.0.7",
+    "jsonwebtoken": "^8.2.1",
+    "koa": "^2.5.0",
+    "koa-body": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-csrf": "^3.0.6",
+    "koa-helmet": "^4.0.0",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "moment": "^2.22.1",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.37.6"
+  }
+}
