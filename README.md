@@ -17,7 +17,7 @@ Created server status routes.
 
 ## Rotues
 ```
-1. GET /status - response { data }
+1. GET /public/status - response { data }
 ```
 
 ```
@@ -27,25 +27,25 @@ Created server status routes.
 ```
 
 ```
-1. GET /users - response: { data }
-2. GET /users/:id - request: User, response: { data }
-3. POST /users - request: User, response: { data }
-4. PUT /users/:id - response: { data }
-5. DELETE /users/:id - response: { data }
+1. GET /protected/users - response: { data }
+2. GET /protected/users/:id - request: User, response: { data }
+3. POST /protected/users - request: User, response: { data }
+4. PUT /protected/users/:id - response: { data }
+5. DELETE /protected/users/:id - response: { data }
 ```
 ```
-1. GET /posts - response: { data }
-2. GET /posts/:id - request: Post, response: { data }
-3. POST /posts - request: { title, content } * Authorizaion header jwt*, response: { data }
-4. PUT /posts/:id - response: { data }
-5. DELETE /posts/:id - response: { data }
+1. GET /protected/posts - response: { data }
+2. GET /protected/posts/:id - request: Post, response: { data }
+3. POST /protected/posts - request: { title, content } * Authorizaion header jwt*, response: { data }
+4. PUT /protected/posts/:id - response: { data }
+5. DELETE /protected/posts/:id - response: { data }
 ```
 ```
-1. GET /comments - response: { data }
-2. GET /comments/:id - request: Comment, response: { data }
-3. POST /comments - request: { postId, content } * Authorization header jwt*, response: { data }
-4. PUT /comments/:id - response: { data }
-5. DELETE /comments/:id - response: { data }
+1. GET /protected/comments - response: { data }
+2. GET /protected/comments/:id - request: Comment, response: { data }
+3. POST /protected/comments - request: { postId, content } * Authorization header jwt*, response: { data }
+4. PUT /protected/comments/:id - response: { data }
+5. DELETE /protected/comments/:id - response: { data }
 ```
 
 ## Models

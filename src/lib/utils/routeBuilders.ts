@@ -67,7 +67,7 @@ export function buildAccessRouter(controller: IAccessController, authController:
 export function buildHealthRouter(controller: HealthController, authController: IAuthController): Router {
 	const router: Router = new Router();
 
-	router.get('/status', authController.authenticate.bind(authController), controller.getStatus.bind(controller));
+	router.get('/public/status', authController.authenticate.bind(authController), controller.getStatus.bind(controller));
 
 	return router;
 }
