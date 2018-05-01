@@ -50,7 +50,7 @@ const validationSchemas = {
  */
 const routesConfig = {
 	users: {
-		route: '/users',
+		route: '/protected/users',
 		type: 'standard', // standard | custom 
 		access: 'protected', // public | protected,
 		controller: new UserController(collectionAdapters.user, validationSchemas.user),
@@ -58,7 +58,7 @@ const routesConfig = {
 		builder: ''
 	},
 	posts: {
-		route: '/posts',
+		route: '/protected/posts',
 		type: 'standard', // standard | custom 
 		access: 'protected', // public | protected,
 		controller: new PostController(collectionAdapters.post, validationSchemas.post),
@@ -66,7 +66,7 @@ const routesConfig = {
 		builder: ''
 	},
 	comments: {
-		route: '/comments',
+		route: '/protected/comments',
 		type: 'standard', // standard | custom 
 		access: 'protected', // public | protected,
 		controller: new CommentController(collectionAdapters.comment, validationSchemas.comment),
